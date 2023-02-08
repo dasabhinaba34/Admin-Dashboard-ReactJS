@@ -8,8 +8,6 @@ import Login from './components/Login/Login';
 
 import Home from './components/Home/Home';
 
-import AfterLogout from './components/AfterLogout/AfterLogout';
-
 
 import {BrowserRouter as Router, Route, Routes,} from 'react-router-dom'
 
@@ -26,7 +24,6 @@ const Rtr = () => {
  
    <Route exact path="/" element={<Login/>}></Route>
    <Route exact path="/home" element={<Home/>}></Route>
-   <Route exact path="/logout" element={<AfterLogout/>}></Route>
      <Route exact path="/sign-up" element={<Signup/>} />
    </Routes>
    </Router>
