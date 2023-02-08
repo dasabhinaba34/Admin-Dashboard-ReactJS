@@ -13,10 +13,10 @@ function createData(name, trackingId, date, status) {
 }
 
 const rows = [
-    createData("Lasania Chiken Fri", 18908424, "2 March 2022", "Approved"),
-    createData("Big Baza Bang ", 18908424, "2 March 2022", "Pending"),
-    createData("Mouth Freshner", 18908424, "2 March 2022", "Approved"),
-    createData("Cupcake", 18908421, "2 March 2022", "Delivered"),
+    createData("iPhone 14 Pro Max", 18908424, "8 February 2023", "Approved"),
+    createData("OnePlus Nord", 18908424, "8 February 2023", "Pending"),
+    createData("Macbook Pro M2", 18908424, "8 February 2023", "Approved"),
+    createData("HP Laserjet Printer", 18908421, "8 February 2023", "Delivered"),
 ];
 
 const makeStyles=(status)=>{
@@ -76,7 +76,7 @@ export default function BasicTable() {
               <TableCell align="left">
                 <span className="status" style={makeStyles(row.status)}>{row.status}</span>
               </TableCell>
-              <TableCell align="left" className="Details">Detail</TableCell>
+              <TableCell align="left" className="Details">Details</TableCell>
             </TableRow>
           ))}
         </TableBody>

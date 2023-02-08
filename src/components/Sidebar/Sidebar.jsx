@@ -2,14 +2,22 @@ import React, { useState } from 'react'
 import Logo from '../../imgs/logo.png'
 import './Sidebar.css'
 
+
 import { SidebarData } from '../../Data/Data'
 import {motion} from 'framer-motion'
 import { UilSignOutAlt, UilBars } from "@iconscout/react-unicons";
+import { useNavigate } from 'react-router-dom'
 
 const Sidebar = () => {
 
     const[selected, setSelected] = useState(0)
     const [expanded, setExpaned] = useState(true)
+
+    const lg = useNavigate();
+    const handleLogout = async() =>{
+        lg('/');
+    }
+
 
 
     const sidebarVariants = {
@@ -37,7 +45,7 @@ const Sidebar = () => {
         <div className="logo">
             <img src={Logo} alt="" />
             <span>
-                Sh<span>o</span>ps
+                Q<span>M</span>S
             </span>
         </div>
 
@@ -57,8 +65,9 @@ const Sidebar = () => {
                 )
             })}
 
-            <div className="menuItem">
-                <UilSignOutAlt/>
+            <div className="menuItem" onClick={()=>handleLogout()}>
+                <UilSignOutAlt />
+                <p>Log Out</p>
             </div>
         </div>
     </motion.div>

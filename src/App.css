@@ -12,11 +12,17 @@
 }
 
 .App {
-  background: linear-gradient(
+  /* background: linear-gradient(
     106.37deg,
     #ffe1bc 29.63%,
     #ffcfd1 51.55%,
     #f3c6f1 90.85%
+  ); */
+  background: linear-gradient(
+    106.37deg,
+    #eff20c 0%,
+    #d8ffc7 42%,
+    #00ffed 100%
   );
   height: 100vh;
   display: flex;
