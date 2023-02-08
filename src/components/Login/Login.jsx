@@ -12,7 +12,7 @@ import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import LoginIcon from '@mui/icons-material/Login';
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -45,11 +45,15 @@ const Login = () => {
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-            <LockOutlinedIcon />
+            <LoginIcon/>
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            <b>Login to Dashboard</b>
           </Typography>
+          <div style={{fontSize:"14px", textAlign:"center"}}>
+          <p>Demo Email : admin@admin.com</p>
+          <p style={{marginTop:"-15px", marginBottom:"-2px"}}>Demo Password : admin@123</p>
+          </div>
           <Box
             component="form"
             onSubmit={handleSubmit}
@@ -62,6 +66,7 @@ const Login = () => {
               fullWidth
               id="email"
               label="Email Address"
+              placeholder="admin@admin.com"
               name="email"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -75,6 +80,7 @@ const Login = () => {
               fullWidth
               name="password"
               label="Password"
+              placeholder="admin123"
               type="password"
               id="password"
               value={password}
@@ -85,13 +91,13 @@ const Login = () => {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
-                        <Button
+            <Button
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign In
+              Login
             </Button>
             <Grid container>
               <Grid item xs>
@@ -101,7 +107,7 @@ const Login = () => {
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                  {"Not a Member? Sign Up Now"}
                 </Link>
               </Grid>
             </Grid>
