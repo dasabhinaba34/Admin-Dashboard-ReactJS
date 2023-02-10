@@ -66,8 +66,7 @@ const Signup = () => {
               id="name"
               label="Name"
               placeholder="Abhinaba Das"
-              name="name"
-              autoComplete="name" 
+              name="name" 
               autoFocus
             />
             
@@ -79,7 +78,6 @@ const Signup = () => {
               label="Email Address"
               placeholder="name@company.com"
               name="email"
-              autoComplete="email"
             />
 
              <TextField
@@ -91,7 +89,6 @@ const Signup = () => {
               placeholder="Password@2023"
               type="password"
               id="password"
-              autoComplete="current-password"
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
