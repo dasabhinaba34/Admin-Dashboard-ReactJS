@@ -24,7 +24,7 @@ const Rtr = () => {
  
    <Route exact path="/" element={<Login/>}></Route>
    <Route exact path="/home" element={<Home/>}></Route>
-     <Route exact path="/sign-up" element={<Signup/>} />
+     <Route exact path="/signup" element={<Signup/>} />
    </Routes>
    </Router>
   </div>
