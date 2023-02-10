@@ -43,8 +43,8 @@ function CompactCard ({param, setExpanded}){
             </div>
             <div className="detail">
                 <Png/>
-                <span>Rs {param.value}/-</span>
-                <span>Last 24 hours</span>
+                <span>INR {param.value}</span>
+                <span>Last 12 hours</span>
             </div>
         </motion.div>
     )
@@ -119,7 +119,7 @@ function ExpandedCard({param, setExpanded}) {
             <div className="chartContainer">
                 <Chart series={param.series} type='area' options={data.options}/>
             </div>
-            <span>Last 24 hours</span>
+            <span>Last 12 hours</span>
 
 
         </motion.div>
